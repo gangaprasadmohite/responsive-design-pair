@@ -1,0 +1,354 @@
+/*.......................general......................................*/
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*......................header..................................*/
+.header {
+	background-color: #2A2A2A;
+	padding: 3rem 0;
+	color: white;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+}
+.header a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-right: 2rem;
+}
+.page-menu {
+	display: none;
+}
+
+.dropbtn {
+  background-color: #2A2A2A;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+	color: white;
+	background-color: #2A2A2A;
+}
+
+
+/*......................Hero............................*/
+.hero {
+	background-color: rgb(222,87,123);
+	background-image: url(./media/banner.svg);
+	padding: 4rem 0;
+	text-align: center;
+}
+.hero h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	color: #fff;
+	padding-bottom: 2rem;
+}
+.hero p {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #fff;
+	line-height: 2.8rem;
+	padding-bottom: 2rem;
+}
+.btn{
+	box-sizing: border-box;
+	padding: 1.5rem 3rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
+	background: transparent;
+	border: 1.5px solid #fff;
+	border-radius: 0.7rem;
+}
+.btn:hover {
+	background-color: white;
+	color: #DE577B;
+}
+/*............................................features........................................*/
+.features{
+	background: #3FA38D;
+	padding: 3rem 0;
+	text-align: center;
+}
+.features h2{
+	font-size: 2.15rem;
+	font-weight: 700;
+	line-height: 1.8rem;
+	color: #fff;
+	padding-bottom: 1rem;
+}
+.features p{
+	color: #fff;
+	font-size: 1.78rem;
+	font-weight: 300;
+	line-height: 1.8rem;
+	padding-bottom: 1.5rem;
+}
+.three-items {
+	display: flex;
+	width: 30%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 0.5rem;
+}
+.three-items i {
+	background-color: white;
+	color: #3FA38D;
+	font-size: 3rem;
+	line-height: 1.75rem;
+	padding: 1.5rem 2rem;
+}
+.three-items p {
+	background: transparent;
+	width: 70%;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 1.75rem;
+	padding: 0.5rem 0.75rem;;
+	text-align: left;
+}
+
+/*.............................laptop.....................................*/
+.laptop {
+	background-color: #EDEFF0;
+	text-align: center;
+	padding: 4rem 0;
+	color: #4B4C4B; 
+}
+.laptop i {
+	font-size: 8rem;
+	color: #4B4C4B;
+}
+.laptop h2 {
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	padding: 1.5rem 0;
+}
+.laptop h3 {
+	font-size: 1.75rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+}
+.laptop p {
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	width: 47%;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.laptop .btn {
+	box-sizing: border-box;
+	background: transparent;
+	border: 2px solid black;
+	color: black;
+	padding : 1rem 2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.75rem;
+}
+.laptop .btn:hover {
+	background-color: black;
+	color: white;
+}
+/*......................................................section4...........................................*/
+.section4{
+	text-align: center;
+	padding: 4rem 0;
+}
+.section4 h2{
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 1.75;
+	color: black;
+}
+.section4 h3{
+	font-size: 1.9rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	color: black;
+	padding-bottom: 2.25rem;
+}
+.section4 p{
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	color: black;
+	padding-bottom: 2.25rem;
+}
+.sec4-col {
+	border: 1PX solid #777;
+	width: 30%;
+	text-align: left;
+	border-radius: 0.5rem;
+}
+.section4 .flex {
+	justify-content: space-around;
+}
+.sec4-col img {
+	width: 100%;
+	font-size: 0;
+}
+.sec4-col p {
+	box-sizing: border-box;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	padding: 1.5rem 1rem;	
+}
+.more {
+	padding-left: 1rem;
+	padding-bottom: 3rem;
+}
+.more a {
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	text-decoration: none;
+	color: black;
+}
+
+/*.......................................Contact..............................*/
+
+.wrapper-contact {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.contact {
+	background-color: #2A2A2A;
+	padding: 4rem 0;
+	text-align: center;
+}
+.contact h2 {
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 1.75rem;
+	padding-bottom: 2rem;
+}
+.contact input {
+	width: 100%;
+	background: transparent;
+	height: 3rem;
+	border: 2px solid #555;
+	border-radius: 0.5rem;
+
+}
+.info {
+	width: 48%;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+}
+input::placeholder {
+	padding-left: 0.5rem;
+}
+textarea {
+	width: 100%;
+	background: transparent;
+	border: 2px solid #555;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;	
+}
+textarea::placeholder {
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+}
+.contact button {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.75rem;
+	border: 2px solid #777;
+	padding: 1rem 3rem;
+}
+.contact button:hover {
+	background-color: #c5c7c9;
+	color: black;
+}
+
+/*............................footer..............................*/
+.footer {
+	text-align: center;
+	padding: 5rem 0;
+	background-color: #2A2A2A;
+}
+.social i {
+	font-size: 2rem;
+	letter-spacing: 1.5rem;
+	color: #595959;
+}
+.social {
+	background-color: #2f2f2f;
+	padding: 1rem ;
+	border-radius: 0.5rem;
+	margin-bottom: 4rem;
+}
+.wrapper-social {
+	max-width: 340px;
+	margin: 0 auto;
+}
+small {
+	color: #595959;
+	margin-top: 4rem;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+}
+.social i:hover {
+	color: white;
+}
